@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <title>HeartGuard</title>
+</head>
+
+<body>
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">HeartGuard</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/test">Test</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/records">Records</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="p-4 p-md-5 mb-4 bg-dark text-white">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 fst-italic">Welcome to HeartGuard</h1>
+      <p class="lead my-3">Your Personal Heart Disease Recognition Application</p>
+    </div>
+  </div>
+  <div class="container">
+    <p class="text-justify">&emsp;&emsp;&emsp;HeartGuard is a state-of-the-art web application designed to aid in the recognition of heart
+      diseases. Our application uses a sophisticated model that takes into account a variety of parameters to provide
+      you with the most accurate results.</p>
+  </div>
+
+  <div class="container">
+    <ul class="list-unstyled">
+      <li>
+        <h3>How It Works</h3>
+        <div class="row">
+          <div class="col-md-6">
+            Our model works on the following parameters:
+            <ul>
+              <li>Age</li>
+              <li>Sex</li>
+              <li>Chest pain type (4 values)</li>
+              <li>Resting blood pressure</li>
+              <li>Serum cholestoral in mg/dl</li>
+              <li>Fasting blood sugar > 120 mg/dl</li>
+              <li>Resting electrocardiographic results (values 0,1,2)</li>
+              <li>Maximum heart rate achieved</li>
+              <li>Exercise induced angina</li>
+              <li>Oldpeak = ST depression induced by exercise relative to rest</li>
+              <li>The slope of the peak exercise ST segment</li>
+              <li>Number of major vessels (0-3) colored by flourosopy</li>
+              <li>Thal: 0 = normal; 1 = fixed defect; 2 = reversable defect</li>
+          </div>
+          <div class="card d-flex ms-auto" style="max-width: 500px; max-height: 250px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="/static/heart.jpeg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Check Now</h5>
+                  <p class="card-text">It's very necessery to check the health of your Heart. So give the required
+                    parameters and check your heart's health.</p>
+                  <button type="button" class="btn btn-primary btn-lg" onclick="location.href='/test'">Check
+                    Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3>Our Mission</h3>
+          <p class="text-justify">&emsp;&emsp;&emsp;At HeartGuard, our mission is to provide a user-friendly platform for heart disease
+            recognition, making it easier for individuals to understand their heart health. We believe in empowering
+            individuals with knowledge about their health, enabling them to make informed decisions.
+            Join us on this journey towards better heart health. Welcome to HeartGuard!</p>
+        </div>
+  </div>
+
+  <div class="container-fluid px-0">
+    <div class="p-4 p-md-5 mb-4 bg-dark text-white">
+      <p class="lead my-3">Your Personal Heart Disease Recognition Application</p>
+      <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
