@@ -46,20 +46,22 @@
       </div>
       <div class="col-md-4">
         <label for="sex" class="form-label">Sex (Male=1, Female=0)</label>
-        <input type="text" class="form-control" name="sex" id="sex">
+        <select class="form-select" name="sex" id="sex">
+          <option selected disabled value="">Choose...</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+        </select>
       </div>
       <div class="col-md-4">
         <label for="cp" class="form-label">Cp</label>
         <select class="form-select" name="cp" id="cp">
           <option selected disabled value="">Choose...</option>
+          <option value="0">0</option>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
           <option value="4">4</option>
         </select>
-        <div class="invalid-feedback">
-          Please select a valid state.
-        </div>
       </div>
       <div class="col-md-4">
         <label for="trestbps" class="form-label">Trestbps</label>
@@ -71,11 +73,19 @@
       </div>
       <div class="col-md-4">
         <label for="fbs" class="form-label">Fbs</label>
-        <input type="text" class="form-control" name="fbs" id="fbs">
+        <select class="form-select" name="fbs" id="fbs">
+          <option selected disabled value="">Choose...</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+        </select>
       </div>
       <div class="col-md-4">
         <label for="restecg" class="form-label">Rest ECG</label>
-        <input type="text" class="form-control" name="restecg" id="restecg">
+        <select class="form-select" name="restecg" id="restecg">
+          <option selected disabled value="">Choose...</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+        </select>
       </div>
       <div class="col-md-4">
         <label for="thalach" class="form-label">Thalach</label>
@@ -83,7 +93,11 @@
       </div>
       <div class="col-md-4">
         <label for="exang" class="form-label">Exang</label>
-        <input type="text" class="form-control" name="exang" id="exang">
+        <select class="form-select" name="exang" id="exang">
+          <option selected disabled value="">Choose...</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+        </select>
       </div>
       <div class="col-md-4">
         <label for="oldpeak" class="form-label">Old Peak</label>
@@ -91,19 +105,33 @@
       </div>
       <div class="col-md-4">
         <label for="slope" class="form-label">Slope</label>
-        <input type="text" class="form-control" name="slope" id="slope">
+        <select class="form-select" name="slope" id="slope">
+          <option selected disabled value="">Choose...</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+        </select>
       </div>
       <div class="col-md-4">
         <label for="ca" class="form-label">Ca</label>
-        <input type="text" class="form-control" name="ca" id="ca">
+        <select class="form-select" name="ca" id="ca">
+          <option selected disabled value="">Choose...</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
       </div>
       <div class="col-md-4">
         <label for="thal" class="form-label">Thal</label>
-        <input type="text" class="form-control" name="thal" id="thal">
-      </div>
-      <div class="col-md-4">
-        <label for="target" class="form-label">Target</label>
-        <input type="text" class="form-control" name="target" id="target">
+        <select class="form-select" name="thal" id="thal">
+          <option selected disabled value="">Choose...</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
       </div>
       <div class="col-12">
         <button class="btn btn-primary" type="submit">Submit form</button>
