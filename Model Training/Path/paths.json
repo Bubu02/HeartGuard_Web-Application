@@ -1,0 +1,4 @@
+{
+    "DATASET_PATH": "../Dataset/heart.csv",
+    "BEST_MODEL": "../Trained model/Heart Disease Recognition model_Random_forest.joblib"
+}
