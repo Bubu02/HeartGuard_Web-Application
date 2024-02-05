@@ -1,6 +1,10 @@
 from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
+import numpy as np
+from joblib import load
+import json
+
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///data.db"
 db = SQLAlchemy(app)
@@ -52,6 +56,35 @@ def records():
         slope = request.form['slope']
         ca = request.form['ca']
         thal = request.form['thal']
+
+        # Convert form data to numpy array
+        input_data = np.array([[
+            age, 
+            sex, 
+            cp, 
+            trestbps, 
+            chol, 
+            fbs, 
+            restecg, 
+            thalach, 
+            exang, 
+            oldpeak, 
+            slope, 
+            ca, 
+            thal
+        ]], dtype=float)
+
+        # Load your machine learning model
+        model = load(".\Trained model\Heart Disease Recognition model_KNeighborClassifier.joblib")
+
+        # Make a prediction
+        prediction = model.predict(input_data)
+
+        # Interpret the prediction
+        if prediction[0] == 0:
+            print ("The person does not have heart disease.")
+        else:
+            print ("The person has heart disease.")
 
         data = TestData(
             name=name, 
