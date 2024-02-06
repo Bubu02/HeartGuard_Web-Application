@@ -26,6 +26,8 @@ class TestData(db.Model):
     slope = db.Column(db.Integer, nullable=False)
     ca = db.Column(db.Integer, nullable=False)
     thal = db.Column(db.Integer, nullable=False)
+    result = db.Column(db.String(5), nullable=False)
+
 
     def __repr__(self) -> str:
         return f"{self.sno} - {self.name}"
@@ -82,9 +84,9 @@ def records():
 
         # Interpret the prediction
         if prediction[0] == 0:
-            print ("The person does not have heart disease.")
+            result = "-VE"
         else:
-            print ("The person has heart disease.")
+            result = "+VE"
 
         data = TestData(
             name=name, 
@@ -100,7 +102,8 @@ def records():
             oldpeak=oldpeak, 
             slope=slope, 
             ca=ca, 
-            thal=thal
+            thal=thal,
+            result=result
             )
         db.session.add(data)
         db.session.commit()
